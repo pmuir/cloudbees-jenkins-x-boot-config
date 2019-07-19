@@ -23,3 +23,6 @@ dependencies:
 - name: cb-app-slack
   repository: https://chartmuseum.jx.charts-demo.cloudbees.com
   version: 0.0.37
+- name: jx-app-datadog
+  repository: http://chartmuseum.jenkins-x.io
+  version: 0.0.4
