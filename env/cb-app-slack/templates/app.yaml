@@ -1,0 +1,12 @@
+apiVersion: jenkins.io/v1
+kind: App
+metadata:
+  annotations:
+    jenkins.io/chart-description: A Slack App for CloudBees Core
+    jenkins.io/chart-repository: https://chartmuseum.jx.charts-demo.cloudbees.com
+  creationTimestamp: null
+  labels:
+    jenkins.io/app-name: cb-app-slack
+    jenkins.io/app-version: 0.0.37
+  name: cb-app-slack
+spec: {}
