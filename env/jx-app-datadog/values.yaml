@@ -1,0 +1,5 @@
+datadog:
+  datadog:
+    apiKey: vault:gitOps/pmuir/environment-facelie-dev/datadog-datadog:apiKey
+    logsEnabled: false
+    site: datadoghq.com
