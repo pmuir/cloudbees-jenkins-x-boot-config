@@ -55,6 +55,14 @@ pipelineConfig:
                 dir: /workspace/source/env
                 command: jx
                 args: ['step', 'create', 'values', '--name', 'parameters']
+              - name: fork-and-clone-git-repo
+                dir: /workspace/source/env
+                command: jx
+                args: ['step', 'git', 'fork-and-clone']
+              - name: create-pull-request
+                dir: /workspace/source/env
+                command: jx
+                args: ['create', 'pullrequest', '--title="chore(config): update configuration"', '--body=""', "--fork=true", '--push=true']
               - name: helm-build
                 dir: /workspace/source/env
                 command: jx
